@@ -172,6 +172,11 @@ function initHeaderScroll() {
 
 // Intersection Observer for animations
 function initScrollAnimations() {
+  // Skip animations on mobile devices to prevent layout issues
+  if (window.innerWidth <= 768) {
+    return;
+  }
+
   const observerOptions = {
     root: null,
     rootMargin: '0px',

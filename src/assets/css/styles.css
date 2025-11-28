@@ -477,17 +477,19 @@ a:hover {
   }
 
   .hero {
-    padding: 40px 20px;
+    min-height: auto;
+    padding: 30px 20px;
   }
 
   .hero__container {
     grid-template-columns: 1fr;
-    gap: 40px;
+    gap: 24px;
     text-align: center;
   }
 
   .hero__content {
     order: 1;
+    gap: 20px;
   }
 
   .hero__image {
@@ -511,8 +513,7 @@ a:hover {
   }
 
   .benefits {
-    grid-template-columns: 1fr;
-    text-align: left;
+    display: none;
   }
 
   .footer__container {
@@ -528,7 +529,15 @@ a:hover {
   }
 
   .hero {
-    padding: 30px 16px;
+    padding: 20px 16px;
+  }
+
+  .hero__container {
+    gap: 20px;
+  }
+
+  .hero__content {
+    gap: 16px;
   }
 
   .hero__title {
