@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="CloudPages - Deploy your web applications to the cloud with ease. Fast, secure, and scalable hosting for modern websites." />
+    <meta name="keywords" content="cloud hosting, web deployment, cloudflare pages, fast hosting" />
+    <title>CloudPages - Cloud Deployment Made Simple</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="header__container">
+        <a href="/" class="header__logo" aria-label="CloudPages Home">
+          <img src="/images/logo.svg" alt="CloudPages Logo" width="200" height="50" />
+        </a>
+        
+        <nav class="header__nav" aria-label="Main navigation">
+          <a href="#features" class="header__nav-link">Features</a>
+          <a href="#pricing" class="header__nav-link">Pricing</a>
+          <a href="#docs" class="header__nav-link">Docs</a>
+          <a href="#support" class="header__nav-link">Support</a>
+        </nav>
+        
+        <a href="#register" class="header__cta-btn">Get Started</a>
+        
+        <button class="header__mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+    
+    <!-- Mobile Navigation Overlay -->
+    <div class="mobile-nav-overlay" aria-label="Mobile navigation">
+      <nav class="header__nav">
+        <a href="#features" class="header__nav-link">Features</a>
+        <a href="#pricing" class="header__nav-link">Pricing</a>
+        <a href="#docs" class="header__nav-link">Docs</a>
+        <a href="#support" class="header__nav-link">Support</a>
+      </nav>
+      <a href="#register" class="header__cta-btn">Get Started</a>
+    </div>
+    
+    <!-- Main Content -->
+    <main class="main">
+      <section class="hero" id="hero">
+        <div class="hero__container">
+          <!-- Left Column - Content -->
+          <div class="hero__content">
+            <span class="hero__badge">
+              <svg class="hero__badge-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+              </svg>
+              New: Edge Functions Now Available
+            </span>
+            
+            <h1 class="hero__title">
+              Deploy Your Website to the 
+              <span class="hero__title-highlight">Cloud Edge</span> 
+              in Seconds
+            </h1>
+            
+            <p class="hero__subtitle">
+              Experience lightning-fast deployments with global CDN distribution. 
+              Build, deploy, and scale your web applications without managing infrastructure.
+            </p>
+            
+            <!-- Registration Form -->
+            <form id="registration-form" class="registration-form" novalidate>
+              <h2 class="registration-form__title">Start your free trial today</h2>
+              
+              <div class="form-group">
+                <label for="name">Full Name</label>
+                <input 
+                  type="text" 
+                  id="name" 
+                  name="name" 
+                  placeholder="John Doe" 
+                  required 
+                  minlength="2"
+                  autocomplete="name"
+                />
+                <span class="error-message"></span>
+              </div>
+              
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input 
+                  type="email" 
+                  id="email" 
+                  name="email" 
+                  placeholder="john@example.com" 
+                  required
+                  autocomplete="email"
+                />
+                <span class="error-message"></span>
+              </div>
+              
+              <div class="form-group">
+                <label for="company">Company Name (Optional)</label>
+                <input 
+                  type="text" 
+                  id="company" 
+                  name="company" 
+                  placeholder="Your Company"
+                  autocomplete="organization"
+                />
+                <span class="error-message"></span>
+              </div>
+              
+              <button type="submit" class="registration-form__submit">
+                Create Free Account
+              </button>
+              
+              <p class="registration-form__terms">
+                By signing up, you agree to our 
+                <a href="#terms">Terms of Service</a> and 
+                <a href="#privacy">Privacy Policy</a>
+              </p>
+            </form>
+            
+            <!-- Success Message -->
+            <div id="success-message" class="success-message">
+              <h3>🎉 Welcome to CloudPages!</h3>
+              <p>Check your email to verify your account and get started.</p>
+            </div>
+            
+            <!-- Benefits -->
+            <div class="benefits" id="features">
+              <div class="benefit">
+                <div class="benefit__icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+                  </svg>
+                </div>
+                <div class="benefit__content">
+                  <h3 class="benefit__title">Lightning Fast</h3>
+                  <p class="benefit__description">Deploy in under 30 seconds with instant global propagation</p>
+                </div>
+              </div>
+              
+              <div class="benefit">
+                <div class="benefit__icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                  </svg>
+                </div>
+                <div class="benefit__content">
+                  <h3 class="benefit__title">Secure by Default</h3>
+                  <p class="benefit__description">Free SSL certificates and DDoS protection included</p>
+                </div>
+              </div>
+              
+              <div class="benefit">
+                <div class="benefit__icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"/>
+                    <line x1="2" y1="12" x2="22" y2="12"/>
+                    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                  </svg>
+                </div>
+                <div class="benefit__content">
+                  <h3 class="benefit__title">Global CDN</h3>
+                  <p class="benefit__description">275+ edge locations for ultra-low latency worldwide</p>
+                </div>
+              </div>
+              
+              <div class="benefit">
+                <div class="benefit__icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                    <line x1="3" y1="9" x2="21" y2="9"/>
+                    <line x1="9" y1="21" x2="9" y2="9"/>
+                  </svg>
+                </div>
+                <div class="benefit__content">
+                  <h3 class="benefit__title">Git Integration</h3>
+                  <p class="benefit__description">Automatic deployments on every push to your repository</p>
+                </div>
+              </div>
+              
+              <div class="benefit">
+                <div class="benefit__icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                    <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
+                    <line x1="12" y1="22.08" x2="12" y2="12"/>
+                  </svg>
+                </div>
+                <div class="benefit__content">
+                  <h3 class="benefit__title">Edge Functions</h3>
+                  <p class="benefit__description">Run serverless code at the edge for dynamic content</p>
+                </div>
+              </div>
+              
+              <div class="benefit">
+                <div class="benefit__icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                  </svg>
+                </div>
+                <div class="benefit__content">
+                  <h3 class="benefit__title">Free Tier</h3>
+                  <p class="benefit__description">Generous free tier with 500 builds per month included</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Right Column - Hero Image -->
+          <div class="hero__image">
+            <img 
+              src="/images/hero.svg" 
+              alt="Cloud deployment illustration showing website being uploaded to cloud servers" 
+              width="600" 
+              height="500"
+              loading="eager"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer__container">
+        <p class="footer__copyright">
+          &copy; 2024 CloudPages. All rights reserved.
+        </p>
+        <nav class="footer__links" aria-label="Footer navigation">
+          <a href="#terms" class="footer__link">Terms of Service</a>
+          <a href="#privacy" class="footer__link">Privacy Policy</a>
+          <a href="#contact" class="footer__link">Contact Us</a>
+        </nav>
+      </div>
+    </footer>
+    
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
