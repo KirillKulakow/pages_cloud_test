@@ -1,6 +1,6 @@
 # pages_cloud_test
 
-A Vite-based web application with automatic deployment to Cloudflare Pages.
+A Vite-based web application with manual deployment to Cloudflare Pages.
 
 ## Development
 
@@ -20,16 +20,16 @@ npm run preview
 
 ## Deployment
 
-This project is automatically deployed to Cloudflare Pages using GitHub Actions.
+This project is deployed to Cloudflare Pages using GitHub Actions with manual trigger.
 
 ### Triggers
 
-- **Push to `main` branch**: Automatically builds and deploys to Cloudflare Pages
-- **Pull requests to `main`**: Builds and deploys a preview version
+- **Manual trigger**: Go to Actions → "Build and Deploy to Cloudflare Pages" → Run workflow
+- Can be triggered on any branch
 
 ### Setup Requirements
 
-To enable automatic deployments, add the following secrets to your GitHub repository:
+To enable deployments, add the following secrets to your GitHub repository:
 
 1. **`CLOUDFLARE_API_TOKEN`**: Your Cloudflare API token with Cloudflare Pages permissions
 2. **`CLOUDFLARE_ACCOUNT_ID`**: Your Cloudflare account ID
