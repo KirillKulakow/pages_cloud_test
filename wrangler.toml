@@ -1,3 +1,3 @@
 "$schema" = "node_modules/wrangler/config-schema.json"
-name = "pages_cloud_test"
+name = "pages"
 pages_build_output_dir = "dist"
