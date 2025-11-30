@@ -31,4 +31,4 @@ jobs:
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: pages deploy dist --project-name=${{ vars.CLOUDFLARE_PROJECT_NAME != '' && vars.CLOUDFLARE_PROJECT_NAME || 'pages-cloud-test' }}
+          command: pages deploy dist --project-name=${{ vars.CLOUDFLARE_PROJECT_NAME != '' && vars.CLOUDFLARE_PROJECT_NAME || 'pages_cloud_test' }}
