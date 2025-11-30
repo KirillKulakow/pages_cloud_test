@@ -34,9 +34,7 @@ To enable deployments, add the following secrets to your GitHub repository:
 1. **`CLOUDFLARE_API_TOKEN`**: Your Cloudflare API token with Cloudflare Pages permissions
 2. **`CLOUDFLARE_ACCOUNT_ID`**: Your Cloudflare account ID
 
-Optionally, you can set a repository variable:
-
-- **`CLOUDFLARE_PROJECT_NAME`**: The name of your Cloudflare Pages project (defaults to `pages_cloud_test`)
+The project name is configured in `wrangler.jsonc` and defaults to `pages_cloud_test`.
 
 ### Creating a Cloudflare API Token
 
