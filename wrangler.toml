@@ -1,4 +1,3 @@
-"$schema" = "node_modules/wrangler/config-schema.json"
 name = "pages"
 compatibility_date = "2025-12-01"
 pages_build_output_dir = "./dist"
